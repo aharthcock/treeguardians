@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Raleway" rel="stylesheet">
+<link rel="stylesheet" href="assets/flexslider.css">
+<link rel="stylesheet" href="assets/bootstrap.min.css">
+<link rel="stylesheet" href="assets/font-awesome.min.css">
+<link rel="stylesheet" href="assets/style.css">
+
+  <head>
+    <title>Treeguardian</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <section class="top-nav hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="top-left">
+
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="top-right">
+              <p>Location:<span>Tyler, TX</span></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--main-nav-->
+
+    <div id="main-nav">
+
+      <nav class="navbar">
+        <div class="container">
+
+          <div class="navbar-header">
+            <!-- <a href="/">
+              <img src="assets/tree-logo-illustration.jpg">
+            </a> -->
+            <a href="/" class="navbar-left"><img src="assets/tree-logo-illustration.jpg"></a>
+            <a href="/" class="navbar-brand">Tree Guardians</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ftheme">
+              <span class="sr-only">Toggle</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <!-- <img src="assets/about/Steven.jpg" alt=""> -->
+
+          <div class="navbar-collapse collapse" id="ftheme">
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/">home</a></li>
+              <li><a href="/about">about</a></li>
+              <li><a href="/services">services</a></li>
+              <li><a href="/resources">resources</a></li>
+              <li><a href="/contact">Make an Appointment</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+    <%= yield %>
+
+
+    <!-- jQuery -->
+      <script src="assets/jquery.min.js"></script>
+      <script src="assets/bootstrap.min.js"></script>
+      <script src="/assets/jquery.flexslider.js"></script>
+      <script src="assets/jquery.inview.js"></script>
+      <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+      <script src="assets/script.js"></script>
+      <script src="contactform/contactform.js"></script>
+
+  </body>
+</html>
